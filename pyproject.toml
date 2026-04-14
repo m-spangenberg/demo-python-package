@@ -1,0 +1,28 @@
+[project]
+name = "python_demo_package_9999"
+version = "0.0.1"
+description = "A toy Python package to demonstrate how to create and publish a package on GitHub and PyPI."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+authors = [
+  { name="Marthinus Spangenberg", email="mspangenberg.dev@gmail.com" },
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+license = { text = "MIT" }
+license-files = ["LICENSE"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/python_demo_package_9999"]
+Homepage = "https://github.com/m-spangenberg/python-demo-package"
+Issues = "https://github.com/m-spangenberg/python-demo-package/issues"
+
+[build-system]
+requires = ["hatchling >= 1.16"]
+build-backend = "hatchling.build"
