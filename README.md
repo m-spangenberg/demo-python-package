@@ -43,6 +43,8 @@ This can be automated by turning it into a GitHub Action workflow in `.github/wo
 
 ## Running the Function
 
+![Demo Docker](/docs/media/demo-docker.gif)
+
 Docker will automatically run the function when you start the container, but locally you use the following command:
 
 ```python
