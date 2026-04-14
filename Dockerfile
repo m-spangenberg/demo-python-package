@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM python:3.12-slim
 
-LABEL org.opencontainers.image.source="https://github.com/m-spangenberg/python-demo-package"
+LABEL org.opencontainers.image.source="https://github.com/m-spangenberg/demo-python-package"
 
 WORKDIR /app
 

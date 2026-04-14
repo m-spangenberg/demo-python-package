@@ -20,8 +20,8 @@ license-files = ["LICENSE"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/python_demo_package_9999"]
-Homepage = "https://github.com/m-spangenberg/python-demo-package"
-Issues = "https://github.com/m-spangenberg/python-demo-package/issues"
+Homepage = "https://github.com/m-spangenberg/demo-python-package"
+Issues = "https://github.com/m-spangenberg/demo-python-package/issues"
 
 [build-system]
 requires = ["hatchling >= 1.16"]

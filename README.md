@@ -10,10 +10,10 @@ GitHub doesn't have a package registry for Python. What you can do instead is to
 
 ```bash
 # with just pip:
-pip install git+https://github.com/USERNAME/python-demo-package.git
+pip install git+https://github.com/USERNAME/demo-python-package.git
 
 # same thing with UV:
-uv pip install git+https://github.com/USERNAME/python-demo-package.git
+uv pip install git+https://github.com/USERNAME/demo-python-package.git
 ```
 
 ## PyPI Installation
@@ -33,10 +33,10 @@ Finally, most developers just end up pushing their bundled code to a registry. T
 echo $GITHUB_TOKEN | docker login ghcr.io -u USERNAME --password-stdin
 
 # build and tag the Docker image
-docker build -t ghcr.io/m-spangenberg/python-demo-package:latest .
+docker build -t ghcr.io/m-spangenberg/demo-python-package:latest .
 
 # push the Docker image to GitHub Container Registry
-docker push ghcr.io/m-spangenberg/python-demo-package:latest
+docker push ghcr.io/m-spangenberg/demo-python-package:latest
 ```
 
 This can be automated by turning it into a GitHub Action workflow in `.github/workflows/publish.yml`
