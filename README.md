@@ -1,6 +1,6 @@
 # Python Demo Package
 
-A toy Python package to demonstrate how to create and publish a package on GitHub and PyPI.
+A Python package to demonstrate how to publish a package on GitHub and PyPI.
 
 The package itself is just a very simple function that produces a classic magic 8-ball response.
 
@@ -34,13 +34,9 @@ echo $GITHUB_TOKEN | docker login ghcr.io -u USERNAME --password-stdin
 
 # build and tag the Docker image
 docker build -t ghcr.io/m-spangenberg/python-demo-package:latest .
-docker tag local-image-name ghcr.io/m-spangenberg/python-demo-package:latest
 
 # push the Docker image to GitHub Container Registry
 docker push ghcr.io/m-spangenberg/python-demo-package:latest
-
-# link the container to a repo (optional)
-LABEL org.opencontainers.image.source="https://github.com/m-spangenberg/python-demo-package"
 ```
 
 This can be automated by turning it into a GitHub Action workflow in `.github/workflows/publish.yml`
@@ -52,9 +48,5 @@ Docker will automatically run the function when you start the container, but loc
 ```python
 # run the function from the cli
 python -m python_demo_package_9999.demo
-
-# or with UVX:
-uvx python -m python_demo_package_9999.demo
-
 # result: "Ask again later"
 ```
