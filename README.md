@@ -10,10 +10,10 @@ GitHub doesn't have a package registry for Python. What you can do instead is to
 
 ```bash
 # with just pip:
-pip install git+https://github.com/USERNAME/demo-python-package.git
+pip install git+https://github.com/m-spangenberg/demo-python-package.git
 
 # same thing with UV:
-uv pip install git+https://github.com/USERNAME/demo-python-package.git
+uv pip install git+https://github.com/m-spangenberg/demo-python-package.git
 ```
 
 ## PyPI Installation
