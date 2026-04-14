@@ -1,4 +1,4 @@
-# Python Demo Package
+# Demo Python Package
 
 A Python package to demonstrate how to publish a package on GitHub and PyPI.
 
